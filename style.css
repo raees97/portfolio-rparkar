@@ -10,6 +10,7 @@ body {
 
 h1, h2, h3 {
   color: #2c3e50;
+  margin-left: 20px;
 }
 
 /* Navbar */
@@ -73,12 +74,24 @@ section {
   scroll-margin-top: 120px; /* Adjust based on navbar height */
 }
 
-/* Projects Grid */
+/* Projects Carousel */
+.projects-container {
+  position: relative;
+  max-width: 90%;
+  margin: auto;
+  overflow: hidden;
+  padding: 10px;
+}
+
 .project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  display: flex;
   gap: 20px;
-  padding: 20px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.project-grid::-webkit-scrollbar {
+  display: none; /* hide scrollbar */
 }
 
 .project a {
@@ -96,12 +109,39 @@ section {
   background: #16a085;
 }
 
-section h1 {
-margin-left: 20px; /* add space from left border */
-margin-bottom: 20px;
-font-size: 2rem;
-text-align: left; /* keep aligned but spaced */
-color: #2c3e50;
+/* Carousel Arrows */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(44, 62, 80, 0.8);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.carousel-btn.left {
+  left: 0px;
+}
+
+.carousel-btn.right {
+  right: 0px;
+}
+
+.card-project {
+  background: #fff;
+  margin: 10px;
+  padding: 30px;
+  border-radius: 12px;
+  min-width: 400px;
+  max-width: 500px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  flex-shrink: 0;
+  flex: 1 1 450px;
 }
 
 /* Skills */

@@ -31,22 +31,35 @@
 <p>My interests include natural language processing, data engineering, and designing machine learning solutions that drive meaningful insights. Beyond academics, I’m passionate about continuous learning, collaboration, and leveraging technology to solve real-world challenges.</p>
   </section>
 
-  <!-- Projects -->
   <section id="projects">
-    <h1>Projects</h1>
-    <div class="project-grid">
-      <div class="project card">
-        <h2>Deep Learning SQL Assistant</h2>
-        <p>Fine-tuned small language models with RAG for schema-aware SQL generation and presented to an advisory board.</p>
-        <a href="https://github.com/yourusername/project1">View Project</a>
-      </div>
-      <div class="project card">
-        <h2>Online Purchase Intent Prediction</h2>
-        <p>Built and compared ML models on 12K+ e-commerce sessions to improve conversion targeting.</p>
-        <a href="https://github.com/yourusername/project2">View Project</a>
-      </div>
-    </div>
-  </section>
+<h1>Projects</h1>
+<div class="projects-container">
+<button class="carousel-btn left" onclick="scrollProjects(-1)">❮</button>
+<div class="project-grid" id="projectGrid">
+<div class="card-project">
+<h3>Deep Learning SQL Assistant</h3>
+<p>Fine-tuned small language models with RAG for schema-aware SQL generation and presented to an advisory board.</p>
+<a href="https://github.com/raees97/sql_adversarial_llm-main">View on GitHub</a>
+</div>
+<div class="card-project">
+<h3>Online Purchase Intent Prediction</h3>
+<p>Built and compared ML models on 12K+ e-commerce sessions to improve conversion targeting.</p>
+<a href="https://github.com/raees97/Purhcase_Intent_Prediction">View on GitHub</a>
+</div>
+<!-- <div class="card-project">
+<h3>Project 3</h3>
+<p>Description of project 3.</p>
+<a href="#">View on GitHub</a>
+</div>
+<div class="card-project">
+<h3>Project 4</h3>
+<p>Description of project 4.</p>
+<a href="#">View on GitHub</a>
+</div> -->
+</div>
+<button class="carousel-btn right" onclick="scrollProjects(1)">❯</button>
+</div>
+</section>
 
   <!-- Skills -->
   <section id="skills" class="card">
@@ -76,4 +89,5 @@
     <p>© 2025 Raees Parkar</p>
   </footer>
 </body>
+<script src="script.js"></script>
 </html>
